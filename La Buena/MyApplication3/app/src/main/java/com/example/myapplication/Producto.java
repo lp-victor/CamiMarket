@@ -24,6 +24,10 @@ public class Producto {
         return nombreProducto;
     }
 
+    public String getTalla() {
+        return talla;
+    }
+
     public void cargarImagen(Context context, ImageView imageView) {
         // Obtiene el ID del recurso de imagen correspondiente
         int idRecurso = context.getResources().getIdentifier(nombreProducto, "drawable", context.getPackageName());
