@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CamiMarket</string>
+    <string name="precio">50€</string>
+    <string name="comprar">Comprar</string>
+    <string name="_100_algond_n">100% algondón</string>
+    <string name="anadir_carrito">Añadir al carrito</string>
+    <string name="_50">50€</string>
+    <string name="imagen_camiseta">imagen_camiseta</string>
+    <string name="menu">menu</string>
+</resources>
