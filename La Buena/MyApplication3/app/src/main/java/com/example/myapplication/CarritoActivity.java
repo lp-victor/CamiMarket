@@ -15,7 +15,7 @@ public class CarritoActivity extends AppCompatActivity {
         private TextView total;
         private double totalprec = 0;
         private TextView totalprecio;
-        private ArrayList<Producto> carro = new ArrayList<>();
+        private ArrayList<Producto> carro = DescActivity.carrito;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class CarritoActivity extends AppCompatActivity {
             // Agrega objetos a la lista
             //carrito.add(new Producto("Persona 1", "25"));
             //carrito.add(new Producto("Persona 2", "30"));
-            for (Producto producto: carrito) {
+            for (Producto producto: carro) {
                 carro.add(producto);
             }
 
