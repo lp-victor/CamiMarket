@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dark Web</string>
+    <string name="precio">50€</string>
+    <string name="titleCard1">Camiseta Lobo</string>
+    <string name="titleCard2">Enano Torero</string>
+    <string name="titleCard3">Tabaco</string>
+    <string name="titleCard4">Libro</string>
+    <string name="titleCard5">Pistol de Agua</string>
+    <string name="titleCard6">Perro</string>
+    <string name="comprar">Comprar</string>
+    <string name="menu">Menu</string>
+    <string name="carrito">Carrito</string>
+    <string name="camimarket">CamiMarket</string>
+    <string name="imagenLoboDesc">TODO</string>
+    <string name="_50">50€</string>
+    <string name="a_adir_al_carrito">Añadir al Carrito</string>
+    <string name="todo">TODO</string>
+    <string name="camiseta_estampado_lobo">Camiseta Estampado Lobo</string>
+    <string name="imagenCamiseta">Imagen Camiseta</string>
+    <string name="_100_algond_n">100% algondón</string>
+</resources>

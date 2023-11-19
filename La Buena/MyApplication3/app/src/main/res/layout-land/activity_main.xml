@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Barra de herramientas -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Contenedor de productos con ScrollView -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Contenido de la tarjeta -->
+            <LinearLayout
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la camiseta -->
+                <ImageView
+                    android:id="@+id/img_camiseta6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/camiseta_sample" />
+
+                <!-- Nombre de la camiseta -->
+                <TextView
+                    android:id="@+id/tv_camiseta6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Camiseta Ejemplo 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- Precio de la camiseta -->
+                <TextView
+                    android:id="@+id/tx_precio6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="$19.99"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Puedes agregar más tarjetas según sea necesario -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

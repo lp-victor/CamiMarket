@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Paleta -->
+    <color name="negro">#000000</color>
+    <color name="grisOscuro">#393939</color>
+    <color name="grisNormal">#747474</color>
+    <color name="grisClaro">#c4c4c4</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="narajaCompra">#EB4714</color>
+</resources>

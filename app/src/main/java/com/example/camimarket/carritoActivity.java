@@ -1,4 +1,6 @@
 package com.example.camimarket;
 
-public class carritoActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class carritoActivity extends AppCompatActivity {
 }
