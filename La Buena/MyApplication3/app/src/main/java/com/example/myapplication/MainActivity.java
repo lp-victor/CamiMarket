@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    public static final String IMG_ID = "imgID";
     LinearLayout c1;
     LinearLayout c2;
     LinearLayout c3;
@@ -37,58 +36,45 @@ public class MainActivity extends AppCompatActivity {
         c1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("gooddev"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.gooddev);
             }
         });
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("hateprog"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.hateprog);
             }
         });
         c3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("programer"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.programer);
             }
         });
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("programming"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.programming);
             }
         });
         c5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("softwaredeveloper"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.softwaredeveloper);
             }
         });
         c6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                abrirProducto(new Producto("whileloop"));
-                Intent i = new Intent(MainActivity.this, DescActivity.class);
-                startActivity(i);
+                enviarId(R.drawable.whileloop);
             }
         });
     }
-    public void abrirProducto(Producto producto_e){
-        String txt = producto_e.getNombreProducto();
+    public void enviarId(int id){
         // Creo el intent y lo mando a carrito, selecciono el tipo texto plano y le añado le texto extra con el nombre del producto.
         Intent intent = new Intent(MainActivity.this, DescActivity.class);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, txt);
+        intent.putExtra("imgID", id);
+        startActivity(intent);
     }
 
 

@@ -21,11 +21,9 @@ public class DescActivity extends AppCompatActivity {
         //botonAgregar = findViewById(R.id.botonAnadirCarrito);
         // RECIBIR INTENTS
         Intent intent = getIntent();
-        String productoSeleccionado = intent.getStringExtra(Intent.EXTRA_TEXT);
-        Log.i("miness" , productoSeleccionado);
-
-        producto = new Producto(productoSeleccionado);
+        int id = intent.getIntExtra(MainActivity.IMG_ID,0);
         ImageView imageView = findViewById(R.id.img_camiseta);
+        imageView.setImageResource(id);
 /*
         // Verifica si el intent tiene datos extras y es de tipo texto.
         if (intent != null && intent.getAction() != null) {
@@ -41,7 +39,6 @@ public class DescActivity extends AppCompatActivity {
 */
         // Cargo la imagen del producto en el imageView de la actividad.
 
-        producto.cargarImagen(this, );
         /*
         botonAgregar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -24,7 +24,7 @@ public class CarritoActivity extends AppCompatActivity {
             objetos.add(new Producto("Persona 1", "25"));
             objetos.add(new Producto("Persona 2", "30"));
 
-            com.example.camimarket.MiAdaptador adaptador = new com.example.camimarket.MiAdaptador(this, objetos);
+            com.example.myapplication.MiAdaptador adaptador = new com.example.myapplication.MiAdaptador(this, objetos);
             listView.setAdapter(adaptador);
         }
 
