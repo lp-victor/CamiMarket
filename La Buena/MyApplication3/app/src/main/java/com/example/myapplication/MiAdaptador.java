@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.myapplication.Producto;
-
 import java.util.ArrayList;
 
 public class MiAdaptador extends ArrayAdapter<Producto> {
@@ -33,14 +31,17 @@ public class MiAdaptador extends ArrayAdapter<Producto> {
         Producto producto = carrito.get(position);
 
         if (producto != null) {
-            TextView nombreTextView = view.findViewById(R.id.nombreTextView);
-            TextView edadTextView = view.findViewById(R.id.edadTextView);
+            TextView nombreTextView = view.findViewById(R.id.Nombre);
+            TextView precioTextView = view.findViewById(R.id.precio);
+            TextView tallaTextView = view.findViewById(R.id.Talla);
 
             if (nombreTextView != null) {
                 nombreTextView.setText(producto.getNombreProducto());
             }
-            if (edadTextView != null) {
-                edadTextView.setText(String.valueOf(producto.getTalla()));
+            if (tallaTextView != null) {
+                tallaTextView.setText(String.valueOf(producto.getTalla()));
+            }if (precioTextView != null) {
+                precioTextView.setText(String.valueOf(producto.getPrecio());
             }
 
         }
