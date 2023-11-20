@@ -19,7 +19,7 @@ public class MiAdaptador extends ArrayAdapter<Producto> {
     public MiAdaptador(Context context, ArrayList<Producto> objetos) {
         super(context, R.layout.item_layout, objetos);
         this.context = context;
-        this.carrito = carrito;
+        this.carrito = objetos;
     }
 
     @Override

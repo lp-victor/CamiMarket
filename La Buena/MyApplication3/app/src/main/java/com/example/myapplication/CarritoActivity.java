@@ -15,7 +15,7 @@ public class CarritoActivity extends AppCompatActivity {
         private TextView total;
         private double totalprec = 0;
         private TextView totalprecio;
-        private ArrayList<Producto> carro = DescActivity.carrito;
+        private static ArrayList<Producto> carro = DescActivity.carrito;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {

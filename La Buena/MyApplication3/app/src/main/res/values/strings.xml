@@ -20,4 +20,16 @@
     <string name="_100_algond_n">100% algondón</string>
     <string name="salirBtn">Salir</string>
     <string name="modoBtn">Cambiar Modo</string>
+    <string name="camiseta_whileloop">Camiseta \'WhileLoop\'</string>
+    <string name="_19_99">$19.99</string>
+    <string name="camiseta_software_developer">Camiseta \'Software Developer\'</string>
+    <string name="camiseta_programming">Camiseta \'Programming\'</string>
+    <string name="camiseta_programmer">Camiseta \'Programmer\'</string>
+    <string name="camiseta_hate_love_programming">Camiseta \'Hate/Love Programming\'</string>
+    <string name="camiseta_good_dev">Camiseta \'Good Dev\'</string>
+    <string name="xl">XL</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="s">S</string>
+    <string name="producto_a_adido_al_carrito">Producto añadido al carrito</string>
 </resources>

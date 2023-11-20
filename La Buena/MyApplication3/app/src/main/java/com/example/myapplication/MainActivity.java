@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, CarritoActivity.class);
+
                 startActivity(i);
             }
         });
@@ -120,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
 
         recreate(); // Reinicia la actividad para aplicar el nuevo modo
     }
-
 
     public void enviarId(int id){
         // Creo el intent y lo mando a carrito, selecciono el tipo texto plano y le añado le texto extra con el nombre del producto.

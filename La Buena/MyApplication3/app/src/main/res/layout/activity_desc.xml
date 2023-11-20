@@ -51,8 +51,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
-            android:text="@string/_50"
+            android:text="@string/_19_99"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
             android:textSize="25sp"
             android:textStyle="bold|italic" />
 
@@ -69,7 +70,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_weight="0.05"
                 android:background="@color/grisNormal"
-                android:text="S"
+                android:text="@string/s"
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -79,7 +80,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_weight="0.05"
                 android:background="@color/grisNormal"
-                android:text="M"
+                android:text="@string/m"
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -89,7 +90,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_weight="0.05"
                 android:background="@color/grisNormal"
-                android:text="L"
+                android:text="@string/l"
                 android:textSize="18sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -99,7 +100,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_weight="0.05"
                 android:background="@color/grisNormal"
-                android:text="XL"
+                android:text="@string/xl"
                 android:textSize="18sp"/>
         </LinearLayout>
 
@@ -109,8 +110,7 @@
             android:layout_height="44dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:background="@color/grisNormal"
-            android:onClick="productoAnadido"
+            android:background="@color/narajaCompra"
             android:text="@string/a_adir_al_carrito"
             android:textColorHighlight="#FF3D00"
             android:textColorLink="#FF3D00"
