@@ -15,21 +15,20 @@ public class CarritoActivity extends AppCompatActivity {
         private TextView total;
         private double totalprec = 0;
         private TextView totalprecio;
-        private static ArrayList<Producto> carro = DescActivity.carrito;
+        private static ArrayList<Producto> carro;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_carrito);
-
+            carro = Carrito.carrito;
             listView = findViewById(R.id.listView);
-
             // Agrega objetos a la lista
-            //carrito.add(new Producto("Persona 1", "25"));
-            //carrito.add(new Producto("Persona 2", "30"));
-            for (Producto producto: carro) {
-                carro.add(producto);
-            }
+            //arro.add(new Producto(R.drawable.gooddev));
+            //carro.add(new Producto(R.drawable.programer));
+            //for (Producto producto: carro) {
+            //    carro.add(producto);
+            //}
 
             com.example.myapplication.MiAdaptador adaptador = new com.example.myapplication.MiAdaptador(this, carro);
             listView.setAdapter(adaptador);
