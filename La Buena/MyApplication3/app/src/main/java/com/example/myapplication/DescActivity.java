@@ -63,5 +63,4 @@ public class DescActivity extends AppCompatActivity {
     public void anadirProdCarrito(){
         Carrito.carrito.add(producto);
     }
-
 }

@@ -15,7 +15,7 @@ public class CarritoActivity extends AppCompatActivity {
         private TextView total;
         private double totalprec = 0;
         private TextView totalprecio;
-        private static ArrayList<Producto> carro;
+        private static ArrayList<Producto> carro = new ArrayList<>();
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +32,14 @@ public class CarritoActivity extends AppCompatActivity {
 
             com.example.myapplication.MiAdaptador adaptador = new com.example.myapplication.MiAdaptador(this, carro);
             listView.setAdapter(adaptador);
-
             totalprecio = findViewById(R.id.preciototal);
             total = findViewById(R.id.productostotal);
-
-            total.setText(carro.size());
+            int tamanoCarro = carro.size();
+            total.setText(String.valueOf(tamanoCarro));
             for (Producto producto: carro) {
                 totalprec = totalprec + producto.getPrecio();
             }
-
+            totalprecio.setText(String.valueOf(totalprec));
         }
 
 }
