@@ -41,7 +41,7 @@ public class MiAdaptador extends ArrayAdapter<Producto> {
             if (tallaTextView != null) {
                 tallaTextView.setText(String.valueOf(producto.getTalla()));
             }if (precioTextView != null) {
-                precioTextView.setText(String.valueOf(producto.getPrecio());
+                precioTextView.setText(String.valueOf(producto.getPrecio()));
             }
 
         }

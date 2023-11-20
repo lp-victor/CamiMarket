@@ -32,4 +32,5 @@
     <string name="m">M</string>
     <string name="s">S</string>
     <string name="producto_a_adido_al_carrito">Producto añadido al carrito</string>
+    <string name="comprarBtn">Comprar</string>
 </resources>
