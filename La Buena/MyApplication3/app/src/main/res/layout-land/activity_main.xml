@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/irACarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:src="@drawable/ic_carrito"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
     <!-- Barra de herramientas -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -33,241 +44,283 @@
             android:orientation="vertical">
 
 
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 1 -->
             <LinearLayout
                 android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta1"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta1"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta1"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gooddev" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_camiseta1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Camiseta 'GoodDev'"
+                        android:textColor="@android:color/black"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/tx_precio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="8dp"
+                        android:text="@string/_19_99"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 2 -->
             <LinearLayout
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta2"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta2"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta2"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hateprog" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_camiseta2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Camiseta 'I Hate Programming'"
+                            android:textColor="@android:color/black"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/tx_precio2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_19_99"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 3 -->
             <LinearLayout
                 android:id="@+id/card3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta3"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta3"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta3"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/programer" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_camiseta3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Camiseta 'I'm a Programmer'"
+                            android:textColor="@android:color/black"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/tx_precio3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_19_99"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 4 -->
             <LinearLayout
                 android:id="@+id/card4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta4"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta4"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta4"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/programming" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_camiseta4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Camiseta 'Programming'"
+                            android:textColor="@android:color/black"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/tx_precio4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_19_99"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 5 -->
             <LinearLayout
                 android:id="@+id/card5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta5"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta5"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta5"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/softwaredeveloper" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_camiseta5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Camiseta 'Software Developer'"
+                            android:textColor="@android:color/black"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/tx_precio5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_19_99"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-            <!-- Contenido de la tarjeta -->
+            <!-- Tarjeta 6 -->
             <LinearLayout
                 android:id="@+id/card6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Imagen de la camiseta -->
-                <ImageView
-                    android:id="@+id/img_camiseta6"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/camiseta_sample" />
-
-                <!-- Nombre de la camiseta -->
-                <TextView
-                    android:id="@+id/tv_camiseta6"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="Camiseta Ejemplo 1"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal">
 
-                <!-- Precio de la camiseta -->
-                <TextView
-                    android:id="@+id/tx_precio6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="8dp"
-                    android:text="$19.99"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:textSize="16sp" />
+                    <ImageView
+                        android:id="@+id/img_camiseta6"
+                        android:layout_width="320dp"
+                        android:layout_height="365dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/whileloop" />
+
+                    <LinearLayout
+                        android:id="@+id/infoVerticalCarta6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_camiseta6"
+                            android:layout_width="519dp"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Camiseta 'While Loop'"
+                            android:textColor="@android:color/black"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:id="@+id/tx_precio6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="8dp"
+                            android:text="@string/_19_99"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
 
-            <!-- Puedes agregar más tarjetas según sea necesario -->
 
         </LinearLayout>
     </ScrollView>
