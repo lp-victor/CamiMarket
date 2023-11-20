@@ -28,6 +28,7 @@ public class CarritoActivity extends AppCompatActivity {
             carro = Carrito.carrito;
             initComponents();
             clicks();
+            // se llama al adaptador previamente creado y se le pasa un carrito para mostrarse por pantalla
             com.example.myapplication.MiAdaptador adaptador = new com.example.myapplication.MiAdaptador(this, carro);
             listView.setAdapter(adaptador);
             total.setText(String.valueOf(carro.size()));

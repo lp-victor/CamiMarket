@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+
+// creamos un adaptador, una clase encargada de adaptar un arraylist de productos que le entra, al formato dado por el item_layout.xml
 public class MiAdaptador extends ArrayAdapter<Producto> {
     private Context context;
     private ArrayList<Producto> carrito;
-
+// le entra tanto un contexto como el ArrayList que debe ser adaptado para mostrarse en el ListView
     public MiAdaptador(Context context, ArrayList<Producto> objetos) {
         super(context, R.layout.item_layout, objetos);
         this.context = context;
@@ -30,6 +32,8 @@ public class MiAdaptador extends ArrayAdapter<Producto> {
 
         Producto producto = carrito.get(position);
 
+
+        // se comprueba que los items dentro del arraylist no esten vacios y se muestran por pantalla
         if (producto != null) {
             TextView nombreTextView = view.findViewById(R.id.Nombre);
             TextView precioTextView = view.findViewById(R.id.precio);
